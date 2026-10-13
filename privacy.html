@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cortex: Privacy Policy</title>
+    <style>
+      body { font-family: system-ui, sans-serif; line-height: 1.6; max-width: 44rem; margin: 3rem auto; padding: 0 1rem; color: #1a1a1a; }
+      h1 { font-size: 1.6rem; }
+      h2 { font-size: 1.15rem; margin-top: 2rem; }
+    </style>
+  </head>
+  <body>
+    <h1>Cortex: Privacy Policy</h1>
+    <p>Last updated: 13 October 2026</p>
+
+    <p>Cortex is an internal knowledge assistant. It answers questions from a team's own documents and shows each
+      person only what they are already allowed to see in the source system. This page explains what Cortex does
+      with data from Google accounts that are connected to it.</p>
+
+    <h2>What Cortex reads from Google</h2>
+    <p>When an account is connected, Cortex asks for read-only access to Google Drive
+      (<code>drive.readonly</code>). It reads only the folders an administrator has configured, and their
+      subfolders. In those folders it reads file names, file contents and each file's sharing list. It cannot
+      change, delete or share anything in Drive, and it does not read files outside the configured folders.</p>
+
+    <h2>How the data is used</h2>
+    <p>File contents are indexed so that Cortex can find passages that answer a question. Sharing lists are used to
+      decide who may see each document: a person gets an answer only from documents shared with them in Drive.
+      The data is not used for advertising, is not sold, and is not used to train machine-learning models.</p>
+
+    <h2>Where the data is stored</h2>
+    <p>The index, the sharing information and the account's refresh token are stored on the server that runs
+      Cortex. The search index is built on that server.</p>
+
+    <h2>Who the data is shared with</h2>
+    <p>To write an answer, Cortex sends the passages the asker is allowed to see to a hosted language-model
+      service (Tencent Cloud Agent Development Platform). Documents the asker may not see are never sent to it.
+      Data is not shared with anyone else.</p>
+
+    <h2>Google API Services User Data Policy</h2>
+    <p>Cortex's use of information received from Google APIs adheres to the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+      including the Limited Use requirements.</p>
+
+    <h2>Removing access and deleting data</h2>
+    <p>An account holder can remove Cortex's access at any time at
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. To have indexed data
+      from an account deleted, write to the contact below.</p>
+
+    <h2>Contact</h2>
+    <p>Open an issue at <a href="https://github.com/watersalamander/cortex-privacy/issues">github.com/watersalamander/cortex-privacy</a>.</p>
+  </body>
+</html>
